@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    display:flex;
+    align-items:Center;
+    justify-content: space-between;
+    width:100%;
+    
+  
+    padding:20px 60px;
+}
+header .logo h1{
+    color:#de2c4d;
+    text-transform: uppercase;
+}
+header .logo span{
+    color:#fb923c;
+    margin-right:0.5rem;
+}
+header .logo .icon i{
+    color:#de2c4d;
+    font-size: 36px;
+}
+.logo{
+    display:flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+   text-decoration: none;
+   margin-right:35px;
+   font-size:large;
+   color:#4b5563;
+   font-weight: 500;
+}
+nav ul li a:hover{
+    color:#de2c4d;
+}
+nav ul .icon2  i:hover{
+       background-color:#de2c4d;
+       border-radius:50%;
+       color:white;
+      padding:0.5rem;
+      overflow: hidden;
+       border:1px solid #de2c4d transparent;
+}
+nav ul  .icon2 i{
+    font-size: 24px;
+    color:#4b5563;
+    transition: all 0.4s ease-in-out;
+   
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    background-color: #f3f4f6;
+    width:100%;
+    height:100%;
+}
+.page1{
+    width:92%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:3rem 0;
+   
+}
+.page1 .sect1{
+    width:47%;
+    
+}
+.page1 .sect2{
+    width:40%;
+    /* height: */
+}
+.page1 .sect2 img{
+    width:100%;
+}
+.page1 .sect1 h1{
+    font-size:48px;
+}
+.page1 .sect1 h1:nth-child(1){
+    margin-bottom:1.5rem;
+}
+.page1 .sect1 h1:nth-child(2){
+    margin-bottom:1.5rem;
+}
+.page1 .sect1 p:first-of-type{
+    margin-bottom:1rem;
+    font-size:20px;
+    
+}
+.page1 .sect1 p:last-of-type{
+    margin-bottom:1rem;
+    color:#a6a7ab;
+    font-size:16px;
+    
+}
+.page1 .sect1 span{
+    color:#fb923c;
+}
+.page1 .sect1 button{
+    padding:10px 40px;
+    border-radius:6px;
+    border: none;
+    color:white;
+    background-color:#de2c4d;
+    box-shadow: 5px 5px 5px 5px #de2c4d;
+    transition:all 0.4s ease-in-out;
+    border:none;
+}
+.page1 .sect1 button:hover{
+    transform: scale(1.1);
+}
