@@ -1,0 +1,54 @@
+@media screen and (min-width:320px) and (max-width:570px) {
+
+    header
+    {
+        flex-direction: column;
+    }
+    
+    nav ul
+    {
+        flex-direction: column;
+    }
+    .page1
+    {
+        width: unset;
+        height: unset;
+        flex-direction: column-reverse;
+        padding: 2rem 0;
+       
+    }
+    .page1 .sect2
+    {
+        width: unset;
+        position: unset;       
+    }
+    .ani h1
+    {
+        position: unset;
+    }
+    section .page2
+    {
+        flex-direction: column;
+        height: unset;
+    }
+    section .page2 .sec1
+    {
+        width: unset;
+        height: unset;
+    }
+    section .page2 .sec2
+    {
+        width: unset;   
+    }
+    .page3 .sec1
+    {
+        flex-direction: column;
+    }
+    .page3 .sec1 .box1
+    {
+        width: unset;
+        height: unset;
+        margin: 0;
+    }
+   
+}
