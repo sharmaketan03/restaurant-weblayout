@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* .btn1{
+    width: 100%;
+    height:100vh;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+    
+
+}
+.btn1 button{
+   padding:10px 10px;
+  
+   position: relative;
+   z-index:1;
+  
+   }
+.btn3::before{
+    content: "";
+    width:100%;
+    height:100%;
+   
+    position: absolute;
+    top:0;
+    left:-70px;
+    background-color: rgb(78, 135, 78);
+    z-index:-1;
+
+   transition: all 1s ease-in-out;
+  
+}
+.btn3:hover::before{
+    content:" ";
+    width:100%;
+    height:100%;
+    position: absolute; 
+    top:0;
+    left:0;
+    background-color: rgb(78, 135, 78);
+ 
+  
+    transition: all 1s ease-in-out;
+  
+   
+} */
+ .btn2::after{
+    content: url(imges/Design-Your-Own-Ceramic-Plate-w-Rim-3-removebg-preview.png);
+ }

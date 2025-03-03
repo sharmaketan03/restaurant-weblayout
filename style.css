@@ -1,124 +1,493 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-header{
-    display:flex;
-    align-items:Center;
+
+header {
+    display: flex;
+    align-items: Center;
     justify-content: space-between;
-    width:100%;
-    
-  
-    padding:20px 60px;
+    width: 100%;
+
+
+    padding: 20px 60px;
 }
-header .logo h1{
-    color:#de2c4d;
-    text-transform: uppercase;
-}
-header .logo span{
-    color:#fb923c;
-    margin-right:0.5rem;
-}
-header .logo .icon i{
-    color:#de2c4d;
-    font-size: 36px;
-}
-.logo{
-    display:flex;
+
+nav {
+    display: flex;
     align-items: center;
 }
-nav ul li{
+
+header .logo h1 {
+    color: #de2c4d;
+    text-transform: uppercase;
+}
+
+header .logo span {
+    color: #fb923c;
+    margin-right: 0.5rem;
+}
+
+header .logo .icon i {
+    color: #de2c4d;
+    font-size: 36px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
     list-style: none;
 }
-nav ul li a{
-   text-decoration: none;
-   margin-right:35px;
-   font-size:large;
-   color:#4b5563;
-   font-weight: 500;
+
+nav ul li a {
+    text-decoration: none;
+    margin-right: 35px;
+    font-size: large;
+    color: #4b5563;
+    font-weight: 500;
 }
-nav ul li a:hover{
-    color:#de2c4d;
+
+nav ul li a:hover {
+    color: #de2c4d;
 }
-nav ul .icon2  i:hover{
-       background-color:#de2c4d;
-       border-radius:50%;
-       color:white;
-      padding:0.5rem;
-      overflow: hidden;
-       border:1px solid #de2c4d transparent;
+
+nav .icon2 i {
+
+    color: #000;
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.4s;
+    cursor: pointer;
 }
-nav ul  .icon2 i{
-    font-size: 24px;
-    color:#4b5563;
-    transition: all 0.4s ease-in-out;
-   
+
+nav .icon2 i:hover {
+    background-color: #de2c4d;
+    border-radius: 50%;
+    color: #fff;
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-section{
+
+section {
     background-color: #f3f4f6;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
-.page1{
-    width:92%;
+
+.page1 {
+    width: 92%;
+
+    height: 100vh;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:3rem 0;
-   
+    padding: 3rem 0;
+    overflow: hidden;
 }
-.page1 .sect1{
-    width:47%;
-    
+
+.page1 .sect1 {
+    width: 47%;
+
 }
-.page1 .sect2{
-    width:40%;
-    /* height: */
+
+.page1 .sect2 {
+    width: 34%;
+    position: relative;
+    right: 100px;
+    top: 0px;
+    /* transform: rotate(-30deg); */
+    animation: round 1s ease-in-out;
 }
-.page1 .sect2 img{
-    width:100%;
+
+.page1 .sect2 img {
+    width: 100%;
+
 }
-.page1 .sect1 h1{
-    font-size:48px;
+
+@keyframes round {
+    from {
+        position: relative;
+        right: -200px;
+        transform: rotate(-90deg);
+
+    }
+
+    to {
+        position: relative;
+        right: 100px;
+        /* transform: rotate(-60deg); */
+    }
 }
-.page1 .sect1 h1:nth-child(1){
-    margin-bottom:1.5rem;
+
+
+
+
+
+.page1 .sect1 h1 {
+    font-size: 48px;
 }
-.page1 .sect1 h1:nth-child(2){
-    margin-bottom:1.5rem;
+
+.page1 .sect1 h1:nth-child(1) {
+    margin-bottom: 1.5rem;
 }
-.page1 .sect1 p:first-of-type{
-    margin-bottom:1rem;
-    font-size:20px;
-    
+
+.page1 .sect1 h1:nth-child(2) {
+    margin-bottom: 1.5rem;
 }
-.page1 .sect1 p:last-of-type{
-    margin-bottom:1rem;
-    color:#a6a7ab;
-    font-size:16px;
-    
+
+.page1 .sect1 p:first-of-type {
+    margin-bottom: 1rem;
+    font-size: 20px;
+
 }
-.page1 .sect1 span{
-    color:#fb923c;
+
+.page1 .sect1 p:last-of-type {
+    margin-bottom: 1rem;
+    color: #a6a7ab;
+    font-size: 16px;
+
 }
-.page1 .sect1 button{
-    padding:10px 40px;
-    border-radius:6px;
+
+.page1 .sect1 span {
+    color: #fb923c;
+}
+
+.page1 .sect1 button {
+    padding: 10px 40px;
+    border-radius: 6px;
     border: none;
-    color:white;
-    background-color:#de2c4d;
+    color: white;
+    background-color: #de2c4d;
     box-shadow: 5px 5px 5px 5px #de2c4d;
-    transition:all 0.4s ease-in-out;
-    border:none;
+    transition: all 0.4s ease-in-out;
+    border: none;
+    position: relative;
+    left: 0;
+    animation: all3 4000ms ease-in-out;
 }
-.page1 .sect1 button:hover{
+
+@keyframes all3 {
+    from {
+        position: relative;
+        left: -500px;
+
+    }
+
+    to {
+        position: relative;
+        left: 0;
+    }
+
+}
+
+.page1 .sect1 button:hover {
     transform: scale(1.1);
+}
+
+section .page2 {
+    width: 100%;
+    height: 60%;
+    background-color: #fff4eb;
+    display: flex;
+
+    justify-content: space-evenly;
+    padding: 2rem;
+    justify-items: center;
+}
+
+section .page2 .sec1 {
+    width: 21%;
+    height: 380px;
+    transform: scale(1);
+    animation: all4 0.6s 4500ms linear;
+}
+
+@keyframes all4 {
+    from {
+        transform: scale(0);
+
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+section .page2 .sec1 img {
+    width: 100%;
+    height: 100%;
+
+}
+
+section .page2 .sec2 {
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+section .page2 .sec2 h1:nth-child(1) {
+    font-size: 50px;
+    text-transform: uppercase;
+
+}
+
+.page2 .sec2 button {
+    padding: 10px 40px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background-color: #de2c4d;
+    box-shadow: 5px 5px 5px 5px #de2c4d;
+    transition: all 0.4s ease-in-out;
+    border: none;
+
+}
+
+.page2 .sec2 button:hover {
+    transform: scale(1.1);
+}
+
+.page2 .sec2 :last-of-type {
+    margin-bottom: 0.5rem;
+}
+
+.page3 {
+    width: 100%;
+}
+
+.page3 .sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem;
+}
+
+.page3 .sec1 .box1 {
+    width: 20%;
+    height: 340px;
+    margin-right: 2.5rem;
+    background-color: white;
+    transition: all 0.2s linear;
+
+
+}
+
+.page3 .sec1 .box1 .box1img {
+    width: 95%;
+    height: 160px;
+    margin: 0.5rem auto;
+}
+
+.page3 .sec1 .box1 .box1img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.page3 .sec1 .box1 .box1para {
+    padding: 0.9rem;
+    background-color: white;
+}
+
+.page3 .sec1 .box1 .box1para .boxin p {
+    font-size: 14px;
+    margin-top: 0.5rem;
+    font-weight: 300;
+    color: rgb(138, 137, 137);
+}
+
+.page3 .sec1 .box1 .box1para .icon3 {
+    color: #16A34A;
+    width: 100%;
+    margin: 0.3rem 0;
+}
+
+.page3 .sec1 .box1 .box1para .icon4 i,
+.page3 .sec1 .box1 .box1para .icon4 span {
+    color: #EAB308;
+}
+
+.icon4 p {
+    color: rgb(138, 137, 137);
+}
+
+.page3 h2 {
+    width: 68%;
+    margin: 2rem auto 0;
+}
+
+.page3 .sec1 .box1:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 3px 3px #bdc0c3;
+}
+
+.page3 .btn1 button {
+    padding: 10px 40px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background-color: #de2c4d;
+    box-shadow: 5px 5px 5px 5px #de2c4d;
+    transition: all 0.4s ease-in-out;
+    border: none;
+    margin: 1rem 0 3rem;
+
+
+}
+
+.page3 .btn1 button:hover {
+    transform: scale(1.1);
+}
+
+.page3 .btn1 {
+    width: 68%;
+    margin: auto;
+}
+
+.sec2 .sec1 {
+    display: none;
+}
+
+.page3 button:hover .sec1 {
+    display: block;
+}
+
+
+
+
+
+.ani h1 {
+    position: relative;
+    left: 0;
+
+    animation: all 1800ms ease-in-out;
+}
+
+@keyframes all {
+    from {
+        position: relative;
+        left: -500px;
+    }
+
+    to {
+        position: relative;
+        left: 0px;
+    }
+}
+
+.ani1 p {
+    font-size: 20px !important;
+    color: black !important;
+    position: relative;
+    left: 0px;
+    animation: all1 2400ms 200ms linear;
+}
+
+@keyframes all1 {
+    from {
+        position: relative;
+        left: -500px;
+    }
+
+    to {
+        position: relative;
+        top: 0;
+    }
+}
+
+.ani2 p {
+    position: relative;
+    left: 0;
+    animation: all2 3500ms linear;
+}
+
+@keyframes all2 {
+    from {
+        position: relative;
+        left: -500px;
+    }
+
+    to {
+        position: relative;
+        top: 0;
+    }
+}
+
+footer .sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+}
+
+footer .sec1 .icon5 {
+    display: flex;
+    align-items: center;
+
+    text-transform: uppercase;
+}
+
+footer .sec1 .icon5 i {
+    font-size: 36px;
+    color: #de2c4d;
+    margin-left: 0.5rem;
+}
+
+footer .sec1 .icon5 h1 {
+    color: #DE2C4D;
+}
+
+footer .sec1 .icon5 h1 span {
+    color: #FB923C;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #fce9ed;
+    padding: 2rem 0;
+}
+
+.icon6 i {
+    font-size: 27px;
+    margin-right: 0.6rem;
+    color: rgba(55, 65, 81, 1);
+}
+ 
+/* 
+.page1::before {
+    content: url("imges/Design-Your-Own-Ceramic-Plate-w-Rim-3-removebg-preview.png");
+    background-image: url(./imges/Design-Your-Own-Ceramic-Plate-w-Rim-3-removebg-preview.png);
+    background-repeat: no-repeat;
+    width:200px;
+    height:200px;
+
+} */
+
+
+.image_back {
+   width:200px;
+   height:200px;
+   position:relative;
+}
+
+
+.image_back img{
+    width:100%;
+    height:100%;
+
 }
